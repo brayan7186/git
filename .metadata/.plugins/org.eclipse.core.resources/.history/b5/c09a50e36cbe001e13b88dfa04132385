@@ -1,0 +1,61 @@
+package com.system.planilla.model;
+
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+
+@Entity
+@Table(name = "TB_CONTRATO")
+@Data
+@Getter
+@Setter
+public class Contrato {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "codContrato")
+	private Integer codContrato;
+	
+	@Column(name = "modContrato" ,length = 50)
+	private String modContrato;
+	
+	@Column(name = "fechaInicio")
+	private Date fechaInicio;
+	
+	@Column(name = "fechaFin")
+	private Date fechaFin;
+	
+	@Column(name = "sueldoBruto")
+	private Double sueldoBruto;
+	
+	@Column(name = "bonificacion")
+	private Double bonificacion;
+	
+	@ManyToOne
+	@JoinColumn(name = "codTrabajador" ,referencedColumnName ="codTrabajador")
+	private Trabajador trabajador;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+}

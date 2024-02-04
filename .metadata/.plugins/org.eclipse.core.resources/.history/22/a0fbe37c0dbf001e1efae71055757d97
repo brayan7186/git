@@ -1,0 +1,55 @@
+package util;
+
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
+public class Prueba {
+
+	public static void main(String[] args) {
+		
+		
+		
+		
+		Carro carro  = new Carro();
+		 carro.ge
+		
+		      /*  double numero = 100.25;
+
+		        // Convertir el número a una cadena
+		        String numeroComoCadena = Double.toString(numero);
+
+		        // Obtener el último dígito como carácter
+		        char ultimoDigitoChar = numeroComoCadena.charAt(numeroComoCadena.length() - 1);
+
+		        System.out.println("El último dígito de " + numero + " es: " + ultimoDigitoChar);
+
+		        // Convertir el carácter a un valor numérico
+		        int ultimoDigito = Character.getNumericValue(ultimoDigitoChar);
+
+		        if (ultimoDigito >= 5) {
+		            BigDecimal bdSueldo = new BigDecimal(String.valueOf(numero));
+		            bdSueldo = bdSueldo.setScale(1, RoundingMode.HALF_UP);
+		            double roundedNum = bdSueldo.doubleValue();
+
+		            String formattedNum = String.format("%.2f", roundedNum);
+
+		            System.out.println("Redondeado: " + formattedNum);
+		        } else if (ultimoDigito < 5) {
+		            System.out.println(numero);
+		        }
+		    }
+		
+        
+    */
+	  }
+		 
+}
+	  
+
+  
+ 
+
+		   
+	
+
+

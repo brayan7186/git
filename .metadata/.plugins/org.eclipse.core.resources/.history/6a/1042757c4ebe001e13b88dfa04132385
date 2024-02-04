@@ -1,0 +1,77 @@
+package com.system.planilla.controller.dto.request;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+public class DetallePlanillaRequest {
+
+	
+	
+	
+	@JsonProperty("salario")
+	 private Double  salario;
+	
+	@JsonProperty("onp")
+	private Double onp;
+	
+	@JsonProperty("afp")
+	private Double afp;
+	
+	@JsonProperty("impuestoRenta")
+	private Double impuestoVenta;
+	
+	@JsonProperty("sueldoPagar")
+	private Double sueldoPagar;
+	
+	@JsonProperty("codTrabajador")
+	private Integer   codTrabajador;
+
+	public Double getSalario() {
+		return salario;
+	}
+
+	public void setSalario(Double salario) {
+		this.salario = salario;
+	}
+
+	public Double getOnp() {
+		return onp;
+	}
+
+	public void setOnp(Double onp) {
+		this.onp = onp;
+	}
+
+	public Double getAfp() {
+		return afp;
+	}
+
+	public void setAfp(Double afp) {
+		this.afp = afp;
+	}
+
+	public Double getImpuestoVenta() {
+		return impuestoVenta;
+	}
+
+	public void setImpuestoVenta(Double impuestoVenta) {
+		this.impuestoVenta = impuestoVenta;
+	}
+
+	public Double getSueldoPagar() {
+		return sueldoPagar;
+	}
+
+	public void setSueldoPagar(Double sueldoPagar) {
+		this.sueldoPagar = sueldoPagar;
+	}
+
+	public Integer getCodTrabajador() {
+		return codTrabajador;
+	}
+
+	public void setCodTrabajador(Integer codTrabajador) {
+		this.codTrabajador = codTrabajador;
+	}
+
+}

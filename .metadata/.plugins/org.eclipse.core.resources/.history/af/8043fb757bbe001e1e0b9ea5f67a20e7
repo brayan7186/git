@@ -1,0 +1,49 @@
+package com.system.planilla.controller.dto.request;
+
+
+
+
+import java.util.Date;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+@Data
+@Getter
+@Setter
+public class ContratoRequest {
+	
+	private static final long serialVersionUID = 1L; 
+	 
+	@JsonProperty( "codigo")
+	private Integer codContrato;
+	
+	@JsonProperty( "modContrato")
+	private String modContrato;
+	
+	@JsonProperty( "fechaInicio")
+	private Date fechaInicio;
+	
+	@JsonProperty( "fechaFin")
+	private Date fechaFin;
+	
+	@JsonProperty( "sueldoBruto")
+	private Double sueldoBruto;
+	
+	@JsonProperty( "bonificacion")
+	private Double bonificacion;
+	
+	@JsonProperty( "codTrabajador")
+	private   Integer codTrabajador;
+	
+	
+	
+	
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+
+	}
